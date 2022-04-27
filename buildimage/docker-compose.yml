@@ -1,0 +1,17 @@
+services:
+  blog_test:
+    image: mm-djm/blog:latest
+    container_name: blog
+    ports:
+      - "8080:8080"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200m"
+        max-file: "5"
+    restart: always
+    network_mode: host
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - /home/ubuntu/blog_data/conf:/root/conf
+      - /home/ubuntu/blog_data/log:/home/ubuntu/blog_data/log

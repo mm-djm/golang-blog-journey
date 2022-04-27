@@ -1,0 +1,20 @@
+{
+    "listen_ip": "localhost",
+    "listen_port": 8080,
+    "log_config": {
+        "dir": "/home/ubuntu/blog_data/log",
+        "level": "DEBUG",
+        "maxAge": 7,
+        "prefix": "blog_log",
+        "rotationTime": 2,
+        "suffix": ".log"
+    },
+    "db_config": {
+        "ip": "localhost",
+        "user": "user",
+        "password": "password"
+    },
+    "ciphers": {
+        "pwd_key": "ABCDABCDABCDABCD"
+    }
+}
